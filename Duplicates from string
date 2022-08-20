@@ -1,0 +1,21 @@
+'''
+We are searching for the duplicated from the string
+'''
+
+from collections import Counter
+
+String_1 = input("Enter the string to check the duplicates :- ")
+
+duplicate_check = Counter(String_1)
+
+for letter, count in duplicate_check.items():
+    if count>1:
+        print(letter)
+
+
+OUTPUT
+Enter the string to check the duplicates :- geeksforgeeks
+g
+e
+k
+s
