@@ -1,0 +1,59 @@
+Data Types
+-----
+There below are data types in the python.
+1. String
+2. List
+3. Tuples
+4. Sets
+5. Dictionary
+6. Array
+
+
+'''
+String Basic Operations
+'''
+
+string_1 = "India is, Great"
+
+print("The given string is :- ")
+print(string_1)
+
+
+print("First character:- ")
+print(string_1[0])
+
+print("Using the split fuction")
+print(string_1.split(",")[0])
+
+'''
+OUTPUT
+First character:- 
+I
+Using the split fuction
+India is
+================================================================================================
+**String is immutable so we have converted into the List and concatinate to the string
+
+string_1 = "Happy Independance day"
+string_2 = ""
+print("Given string is ")
+print(string_1)
+print(len(string_1))
+
+list_1 = list(string_1)
+print("Convertable list\n",list_1)
+
+list_1[3] = 'H'
+
+print(list_1)
+
+string_2= ''.join(list_1)
+print(string_2)
+
+OUTPUT
+
+Convertable list
+ ['H', 'a', 'p', 'p', 'y', ' ', 'I', 'n', 'd', 'e', 'p', 'e', 'n', 'd', 'a', 'n', 'c', 'e', ' ', 'd', 'a', 'y']
+['H', 'a', 'p', 'H', 'y', ' ', 'I', 'n', 'd', 'e', 'p', 'e', 'n', 'd', 'a', 'n', 'c', 'e', ' ', 'd', 'a', 'y']
+HapHy Independance day
+
