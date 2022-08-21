@@ -1,0 +1,23 @@
+**Addition of digits in the Number even odd
+
+
+
+def digitsum(n):
+    digit_sum =0
+    for digit in str(n):
+        digit_sum+=int(digit)
+    return digit_sum
+        
+
+List_1 = [12, 13, 14, 15, 16, 17, 18]
+
+Even_List = [digitsum(i) for i in List_1 if not i&1]
+Odd_List = [digitsum(i) for i in List_1 if i&1]
+
+print("Even List:- ", Even_List)
+print("Odd List:- ", Odd_List)
+
+OUTPUT
+
+Even List:-  [3, 5, 7, 9]
+Odd List:-  [4, 6, 8]
