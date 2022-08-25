@@ -1,0 +1,34 @@
+All = [12,23,34,45,65,76,87,98]
+Sum_of_Odd_Digit=[]
+Sum_of_Even_Digit=[]
+EvenFlag = False
+OddFlag = False
+
+def DigitSum(n):
+    sum =0
+    for digit in str(n):
+        sum+=int(digit)
+
+if EvenFlag == True:
+        Sum_of_Even_Digit.append(sum)
+    elif OddFlag == True:
+        Sum_of_Odd_Digit.append(sum)
+
+
+for num in All:
+    if num%2==0:
+        EvenFlag = True
+        DigitSum(num)
+    else:
+        OddFlag = True
+        DigitSum(num)
+
+print("Odd Digits Sum :- ",Sum_of_Odd_Digit)
+print("Even Digits Sum:- ",Sum_of_Even_Digit)
+
+'''
+OUTPUT
+Odd Digits Sum :-  []
+Even Digits Sum:-  [3, 5, 7, 9, 11, 13, 15, 17]
+
+'''
