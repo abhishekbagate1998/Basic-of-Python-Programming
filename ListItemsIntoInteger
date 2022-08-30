@@ -1,0 +1,14 @@
+# Convert string into integer
+
+All_num = [ '23','34','55','66','676','776','77','78']
+
+
+Int_List = [int(num) for num in All_num]    #Using the list comprehension
+
+print(Int_List)
+
+
+--
+OUTPUT
+[23, 34, 55, 66, 676, 776, 77, 78]
+
