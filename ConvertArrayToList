@@ -1,0 +1,29 @@
+
+import array as arr
+
+
+a = arr.array('i', [1,2,3,4,5,6])
+
+
+print("Given array:- ", end = "")
+
+#In order to print the array we have use the folllowing loop only
+
+for i in range(0,3):
+    print(a[i], end=" ")
+
+print()
+
+#Here to convert into the list by using dot(.) operater and tolist is the keyword
+
+ArrayToList = a.tolist()
+
+print("Array into List:- ",ArrayToList)
+
+'''
+
+OUTPUT:- 
+Given array:- 1 2 3 
+Array into List:-  [1, 2, 3, 4, 5, 6]
+
+'''
