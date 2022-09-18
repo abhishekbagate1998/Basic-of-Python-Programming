@@ -1,0 +1,27 @@
+#Appending values in dictionary by user defined
+
+dict ={}
+
+key_length = int(input("Enter the number of key length:- "))
+
+
+for key in range(1, key_length +1):
+    keys = int(input("Enter a Key " +str(key)+" Value:- "))
+    values = input("Enter a Value " +str(key)+" :- ")
+    dict[keys] = values
+    key+=1
+
+print(dict)
+
+'''
+OUTPUT
+
+Enter the number of key length:- 3
+Enter a Key 1 Value:- 11
+Enter a Value 1 :- Abhishek
+Enter a Key 2 Value:- 22
+Enter a Value 2 :- Aniket
+Enter a Key 3 Value:- 33
+Enter a Value 3 :- Abhijeet
+{11: 'Abhishek', 22: 'Aniket', 33: 'Abhijeet'}
+'''
