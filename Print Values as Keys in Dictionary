@@ -1,0 +1,35 @@
+dict={}
+
+length = int(input("Enter the length of Dictionary:- "))
+count = 1
+
+#Creating the user defined List
+
+for i in range(1, length+1):
+    
+    key=int(input("Enter the Key "+str(count)+" :- "))
+    value =input("Enter the Value "+str(count)+" :- ")
+    
+    dict[key] = value
+    count+=1
+    
+print(dict)
+
+#printing the values as number of keys
+
+for key, value in dict.items():
+    print(value*key, end="")
+
+'''
+OUTPUT
+
+Enter the length of Dictionary:- 3
+Enter the Key 1 :- 2
+Enter the Value 1 :- Abhishek
+Enter the Key 2 :- 3
+Enter the Value 2 :- Baggu
+Enter the Key 3 :- 4
+Enter the Value 3 :- India
+{2: 'Abhishek', 3: 'Baggu', 4: 'India'}
+AbhishekAbhishekBagguBagguBagguIndiaIndiaIndiaIndia
+'''
